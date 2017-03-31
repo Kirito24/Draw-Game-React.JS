@@ -1,12 +1,12 @@
 
 
 var color='blue';
-var row =[];
 var Button = React.createClass({
 
   clear: function(){
-
+   //clearing the board
     document.getElementById('container').innerHTML='';
+    //Rendering everythink from the beggining
     ReactDOM.render(<div>
 
       <Block/><Block/><Block/><Block/><Block/><Block/><Block/> <Block/><Block/><Block/><Block/><Block/><Block/><Block/>
@@ -162,9 +162,12 @@ var Block = React.createClass({
 
 });
 
+
+
+//Rendering Buttons and the place for buttons
 ReactDOM.render(<div id="showColor"><Button/></div>,document.getElementById('buttons'));
-
-
+//START
+//Rendering all the clickable blocks
  ReactDOM.render(<div>
    <Block/><Block/><Block/><Block/><Block/><Block/><Block/> <Block/><Block/><Block/><Block/><Block/><Block/><Block/>
     <Block/><Block/><Block/><Block/><Block/><Block/><Block/> <Block/><Block/><Block/><Block/><Block/><Block/><Block/>
