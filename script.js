@@ -51,7 +51,7 @@ var Button = React.createClass({
                     document.getElementById('showColor').style.background='white'
                     break;
                      case 'white':
-                     case 'black :
+                     case 'black':
                     color='blue'
                      document.getElementById('showColor').style.background='blue'
                      break;
