@@ -50,7 +50,8 @@ var Button = React.createClass({
                    color='white'
                     document.getElementById('showColor').style.background='white'
                     break;
-                    case 'white' || 'black':
+                     case 'white':
+                     case 'black :
                     color='blue'
                      document.getElementById('showColor').style.background='blue'
                      break;
