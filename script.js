@@ -20,53 +20,43 @@ var Button = React.createClass({
 
    changeColor: function(){
 
-     if(color==='blue')
-     {
-       color='yellow'
-        document.getElementById('showColor').style.background='yellow'
-      }
+           switch(color)
+           {
+             case 'blue':
+             color='yellow'
+              document.getElementById('showColor').style.background='yellow'
+              break;
+              case 'yellow':
+              color='green'
+               document.getElementById('showColor').style.background='green'
+               break;
+               case 'green':
+               color='red'
+                document.getElementById('showColor').style.background='red'
+                break;
+                case 'red':
+                color='grey'
+                 document.getElementById('showColor').style.background='grey'
+                 break;
+                 case 'grey':
+                 color='magenta'
+                  document.getElementById('showColor').style.background='magenta'
+                  break;
+                  case 'magenta':
+                  color='orange'
+                   document.getElementById('showColor').style.background='orange'
+                   break;
+                   case 'orange':
+                   color='white'
+                    document.getElementById('showColor').style.background='white'
+                    break;
+                    case 'white','black':
+                    color='blue'
+                     document.getElementById('showColor').style.background='blue'
+                     break;
 
-     else if(color==='yellow')
-      {
-        color='green'
-          document.getElementById('showColor').style.background='green'
-        }
-     else if(color==='green')
-      {
-        color='red'
-       document.getElementById('showColor').style.background='red'
-    }
-     else if(color==='red')
-      {
-        color='grey'
-         document.getElementById('showColor').style.background='grey'
-       }
-       else if(color==='grey')
-        {
-          color='magenta'
-           document.getElementById('showColor').style.background='magenta'
-         }
-         else if(color==='magenta')
-          {
-            color='orange'
-             document.getElementById('showColor').style.background='orange'
-           }
-         else if(color==='orange')
-          {
-            color='white'
-             document.getElementById('showColor').style.background='white'
-           }
-           else if(color==='white')
-            {
-              color='blue'
-               document.getElementById('showColor').style.background='blue'
-             }
-           else if(color==='black')
-            {
-              color='blue'
-               document.getElementById('showColor').style.background='blue'
-             }
 
+           }
 
    },
    clearIt: function(){
@@ -173,7 +163,7 @@ var Block = React.createClass({
 
                return (
 
-                <div className="block" style={bStyle} onMouseDown={this.down} onClick={this.clickEvent} onMouseUp={this.up} onMouseEnter={this.hoverEvent} /*onMouseLeave={this.hoverEvent}*/></div>
+                <div className="block" style={bStyle} onMouseDown={this.down} onClick={this.clickEvent} onMouseUp={this.up} onMouseEnter={this.hoverEvent} ></div>
 
 
                )
